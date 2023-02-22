@@ -1,0 +1,652 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container{
+    width: 1200px;
+    margin: auto;
+}
+.align-center{
+    align-items: center;
+}
+:root{
+    --praimaryfont:'Roboto', sans-serif;
+    --primarycolor: #2ecc71;
+    --secondarycolor:#566366;
+    --thirdcolor:#919191;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* NAV STARTS HERE */
+nav{
+    background-color: #252d2f;
+}
+nav .logo{
+    width: 30%;
+    text-align: left;
+}
+nav .menu{
+    width: 70%;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul{
+    text-align: right;
+}
+nav ul li a{
+    display: inline-block;
+    padding: 25px 10px;
+    font-family: var(--praimaryfont);
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    transition: 0.6s;
+}
+nav ul li:hover a{
+    color: var(--primarycolor);
+}
+
+
+/* NAV ENDS HERE */
+/* BANNER STAETS HERE */
+#banner{
+background-image: url(../images/banner_img.jpg);
+/* background-size: 100%; */
+background-position: center;
+background-repeat: no-repeat;
+height: 1000px;
+}
+#banner .banner_text{
+    margin: auto;
+    position: relative;
+}
+#banner .banner_text h3{
+    font-size: 60px;
+    font-family: var(--praimaryfont);
+    color: white;
+    font-weight: 700;
+    margin-top: 510px;
+}
+#banner .button_more{
+    text-align: center;
+
+} 
+#banner .button_more a{
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--praimaryfont);
+    text-align: center;
+    padding: 10px 25px;
+    border: 2px solid white;
+    margin-top: 50px;
+    
+}
+#banner .banner_text .top{
+    position: absolute;
+    top: 71%;
+    left: 0;
+    width: 100%;
+}
+#banner .banner_text hr{
+    color: white;
+    font-size: 60px;
+     margin-top: 10px; 
+}
+#banner .banner_text .dot img{
+    position: absolute;
+    bottom: -250px;
+    right: -210px;
+
+}
+
+/* BANNER ENDS HERE */
+/* VALUES STARTS HERE */
+#values {
+    margin: 80px 0 80px 0;
+}
+#values .values_card{
+    width: calc(33.33% - 40px);
+    margin: 0 20px;
+}
+#values .values_card p {
+    font-size: 18px;
+    font-family: var(--praimaryfont);
+    color: var(--thirdcolor);
+    line-height: 30px;
+    padding: 35px 0 0 0;
+}
+#values .values_card h5{
+    font-size: 30px;
+    font-family: var(--praimaryfont);
+    font-weight: 700;
+    color: var(--secondarycolor);
+}
+/* VALUES ENDS HERE */
+/* ABOUT STARTS HERE */
+#about .about_img{
+    width: 40%;
+}
+#about .about_img img{
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 720px;
+}
+#about .about_text{
+    width: 60%;
+    background-color: #f2f2f2;
+    padding-top: 70px;
+    padding-bottom: 300px;
+}
+#about .about_text h3{
+    font-size: 30px;
+    font-family: var(--praimaryfont);
+    color: var(--secondarycolor);
+    padding: 0 60px;
+}
+#about .about_text p{
+    font-size: 18px;
+    padding-top: 30px;
+    color: var(--thirdcolor);
+    line-height: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: justify;
+}
+#about .design_card{
+    position: relative;
+   
+    
+}
+
+#about .icon span{
+  
+    position: absolute;
+    left: 8%;
+    top: 55px;
+    font-size: 25px;
+    color: var(--primarycolor);
+   
+}
+#about .design_card .text h5{
+    position: absolute;
+    top: 54px;
+    left: 105px;
+    font-size: 22px;
+    font-family: var(--praimaryfont);
+    color: var(--secondarycolor);
+    font-weight: 700;
+}
+#about .design_card .text p{
+    position: absolute;
+    left: 6%;
+    top: 60px;
+    font-size: 19px;
+  
+}
+#about .graphic_card{
+    position: relative;
+}
+#about .graphic_card span{
+    position: absolute;
+    left: 52%;
+    top: 60px;
+    font-size: 30px;
+    color: var(--primarycolor);
+
+}
+#about .graphic_card .text h5{
+    position: absolute;
+    top: 55px;
+    left: 450px;
+    font-size: 22px;
+    font-family: var(--praimaryfont);
+    color: var(--secondarycolor);
+    font-weight: 700;
+
+}
+#about .graphic_card .text p{ position: absolute;
+    left: 52%;
+    top: 65px;
+
+}
+#about .online_card {
+    position: relative;
+}
+#about .online_card .icon span{
+    position: absolute;
+    left: 60px;
+    top: 205px;
+    font-size: 27px;
+}
+#about .online_card .text h5{
+    position: absolute;
+    top: 200px;
+    left: 105px;
+}
+#about .online_card .text p{
+    position: absolute;
+    left: 6%;
+    top: 210px;
+    font-size: 19px;
+}
+#about .seo_card{
+    position: relative;
+}
+#about .seo_card img{
+    width: 4%;
+    position: absolute;
+    left: 53%;
+    top: 203px;
+  
+}
+#about .seo_card .text h5{
+    position: absolute;
+    left: 60%;
+    top: 200px;
+    font-size: 22px;
+    font-family: var(--praimaryfont);
+    color: var(--secondarycolor);
+
+}
+#about .seo_card .text p{
+    position: absolute;
+    left: 52%;
+    top: 210px;
+}
+
+
+/* ABOUT ENDS HERE */
+/* SKILL STARTS HERE */
+#skill{
+    padding: 100px 0;
+}
+#skill .skill_text{
+    width: 47%;
+}
+#skill .skill_img{
+    display: block;
+    margin-left: 96px;
+    width: 45%;
+    text-align: right;
+ 
+}
+#skill .skill_text h3{
+    font-size: 30px;
+    font-family: var(--praimaryfont);
+    color: var(--secondarycolor);
+}
+#skill .skill_text p{
+    font-size: 18px;
+    font-family: var(--praimaryfont);
+    color: var(--thirdcolor);
+    text-align: justify;
+    line-height: 30px;
+    margin-top: 30px;
+}
+#skill .skill_text .button a{
+    display: inline-block;
+    margin-top: 50px;
+    font-weight: 700; 
+    padding: 12px 25px;
+    border: 2px solid #2ecc71;
+    color: var(--primarycolor);
+    font-family: var(--praimaryfont);
+    font-size: 18px;
+}
+
+#skill .skill_img img{
+    display: block;
+    width: 90%;
+   
+}
+/* SKILL ENDS HERE */
+/* RESUME STARTS HERE */
+#resume{
+    padding: 70px 0;
+    background-color: #f1f1f1;
+
+}
+#resume .resume_text{
+    width: 90%;
+    margin: auto;
+}
+#resume .resume_text h3{
+    font-size: 30px;
+    color: var(--secondarycolor);
+    font-family: var(--praimaryfont);
+    text-align: center;
+}
+#resume .resume_text p{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: var(--praimaryfont);
+    color: var(--thirdcolor);
+    margin-top: 30px;
+    text-align: center;
+}
+#resume .resume_button{
+    text-align: center;
+}
+#resume .resume_button a{
+ 
+    display: inline-block;
+    padding: 15px 20px;
+    font-weight: 700;
+    font-size: 18px;
+    border: 2px solid #2ecc71;
+    color: var(--primarycolor);
+    font-family: var(--praimaryfont);
+    margin-top: 40px;
+
+}
+/* RESUME ENDS HERE */
+/* EDUCATION STARTS HERE */
+#education{
+    padding: 70px 0;
+}
+#education .education_text{
+    width: 42%;
+}
+#education .diploma_text{
+    width: 48%;
+    margin-left: 70px;
+}
+#education .education_text h3{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--praimaryfont);
+    color: var(--secondarycolor);
+}
+#education .education_text p{
+    font-size: 18px;
+    color: var(--thirdcolor);
+    text-align: justify;
+    line-height: 30px;
+    padding-top: 30px;
+}
+#education .diploma_text h5{
+    margin-bottom: 5px;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: var(--praimaryfont);
+    color: var(--secondarycolor);
+    margin-top: 70px;
+}
+#education .diploma_text p{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: var(--praimaryfont);
+    color: var(--thirdcolor);
+    text-align: justify;
+}
+#education .GPA a{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: var(--praimaryfont);
+    background-color:var(--primarycolor);
+    padding: 5px 10px;
+    color: white;
+    border: 1px solid #2ecc71;
+    margin-top: 10px;
+
+} 
+#education .diploma_text hr{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #e5e5e5;
+}
+#education hr{
+    color:#e5e5e5;
+    margin-top: 70px;
+}
+/* EDUCATION ENDS HERE */
+/* EXPERIENCE STARTS HERE */
+#experience {
+    padding-bottom: 80px;
+}
+#experience .experience_text{
+    width: 47%;
+}
+#experience .experience_text h3{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--praimaryfont);
+    color: var(--secondarycolor);
+}
+#experience .experience_text p{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: var(--praimaryfont);
+    color: var(--thirdcolor);
+    text-align: justify;
+    padding-top: 30px;
+}
+#experience .lead{
+    width: 47%;
+    margin-left: 65px;
+    
+}
+#experience .lead h5{
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--secondarycolor);
+    font-family: var(--praimaryfont);
+    margin-top: 70px;
+}
+#experience .lead P{
+    font-size: 18px;
+    color: var(--thirdcolor);
+    font-family: var(--praimaryfont);
+    margin-top: 5px;  
+    text-align: justify;
+
+}
+#experience .years a{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: var(--praimaryfont);
+    background-color:var(--primarycolor);
+    padding: 5px 10px;
+    color: white;
+    border: 1px solid #2ecc71;
+    margin-top: 10px;
+}
+#experience .lead hr{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #e5e5e5;
+}
+/* EXPERIENCE ENDS HERE */
+/* STONE STARTS HERE */
+#stone{
+    padding: 80px 0;
+    background-color: #f2f2f1;
+}
+#stone .stone_text{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+#stone .stone_text p{
+    font-size: 24px;
+    line-height: 36px;
+    font-family: var(--praimaryfont);
+    color: var(--thirdcolor);
+}
+#stone .stone_text h6{
+font-size: 18px;
+font-family: var(--praimaryfont);
+color: var(--secondarycolor);
+margin-top: 30px;
+margin-bottom: 30px;
+}
+/* STONE ENDS HERE */
+/* PORTFOLIO STARTS HERE */
+#portfolio{
+    padding: 80px 0;
+}
+#portfolio .heading h3{
+    text-align: center;
+    font-size: 30px;
+    font-family: var(--praimaryfont);
+    color: var(--secondarycolor);
+}
+#portfolio .heading{
+    width: 85%;
+    margin: auto;
+}
+#portfolio .heading p{
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    font-family: var(--praimaryfont);
+    color: var(--thirdcolor);
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+#portfolio .image_one img{
+    width: 31%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+#portfolio .image_two img{
+    display: block;
+   width: 32%;
+}
+/* PORTFOLIO ENDS HERE */
+/* CONTACT STARTS HERE */
+#contact{
+    padding: 80px 0;
+    background-color: #252e30;
+}
+#contact .contact_text{
+    width: 49%;
+}
+#contact .contact_text h5{
+    color: white;
+    font-size: 30px;
+    font-family: var(--praimaryfont);
+}
+#contact .contact_text p{
+    color: var(--thirdcolor);
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+    font-family: var(--praimaryfont);
+    padding-top: 25px;
+}
+#contact .contact_text span{
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    font-family: var(--praimaryfont);
+    padding-right: 35px;
+}
+#contact .contact_text a{
+    display: inline-block;
+    color: var(--thirdcolor);
+    font-family: var(--praimaryfont);
+    font-size: 18px;
+    margin-bottom: 8px;
+  
+}
+#contact .phone span{
+ display: inline-block; 
+    padding-right: 30px;
+}
+#contact .input_data{
+    margin-left: 80px;
+}
+#contact .input_data input{
+    padding: 12px 150px;
+    color: white;
+    border: 1px solid #4b5456;
+    background-color: #4b5456;
+}
+#contact .input_data p{
+    color: white;
+    font-size: 18px;
+    font-family: var(--praimaryfont);
+    margin-bottom: 10px;   
+}
+
+#text{
+    margin-top: 5px;
+    background-color: #4b5456;
+    width: 440px;
+    height: 210px;
+    border: none;
+    color: white;
+}
+#contact .input_data a{
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+    font-family: var(--praimaryfont);
+    border: 1px solid #191f21;
+    padding: 10px 25px;
+    background-color: #191f21;
+    margin-top: 12px;
+   
+} 
+
+/* CONTACT ENDS HERE */
+/* FOOTER STARTS HERE */
+#social{
+    padding: 30px 0 30px 0;
+    background-color: #191f21;
+}
+#social .heading{
+    text-align: center;
+}
+#social .heading p{
+    font-size: 14px;
+    font-family: var(--praimaryfont);
+    color:#4b5456;
+    transition: 0.6s;
+}
+#social .heading:hover p{
+    color: white;
+}
+#social ul{
+    text-align: center;
+}
+#social ul li{
+    display: inline-block;
+}
+#social ul li a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #4b5456;
+    text-align: center;
+    color: #191f21;
+    border-radius: 50%;
+    margin: 15px 6px 0 6px;
+    transition: 0.8s;
+}
+#social ul li:hover a{
+    color: white;
+}
+/* FOOTER ENDS HERE */
